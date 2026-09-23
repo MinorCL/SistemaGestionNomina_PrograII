@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>17.0</VCProjectVersion>
+    <Keyword>Win32Proj</Keyword>
+    <ProjectGuid>{9c657764-bd2e-41ad-b44b-04e138969263}</ProjectGuid>
+    <RootNamespace>Proyecto1PrograII</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="BonificacionMontoFijo.cpp" />
+    <ClCompile Include="BonificacionPorcentaje.cpp" />
+    <ClCompile Include="CCSS.cpp" />
+    <ClCompile Include="ColillaPago.cpp" />
+    <ClCompile Include="ComponenteSalario.cpp" />
+    <ClCompile Include="ComponteFactory.cpp" />
+    <ClCompile Include="Consola.cpp" />
+    <ClCompile Include="DeduccionBuilder.cpp" />
+    <ClCompile Include="Deduccion.cpp" />
+    <ClCompile Include="DeduccionCompuesta.cpp" />
+    <ClCompile Include="DeduccionFactory.cpp" />
+    <ClCompile Include="DeduccionFija.cpp" />
+    <ClCompile Include="DeduccionPorcentual.cpp" />
+    <ClCompile Include="Embargos.cpp" />
+    <ClCompile Include="Empleado.cpp" />
+    <ClCompile Include="HorasDoblesDiurnas.cpp" />
+    <ClCompile Include="HorasDoblesMixta.cpp" />
+    <ClCompile Include="HorasDoblesNocturno.cpp" />
+    <ClCompile Include="HorasExtraDiurnas.cpp" />
+    <ClCompile Include="HorasExtraFeriadoLaborado.cpp" />
+    <ClCompile Include="HorasExtraMixta.cpp" />
+    <ClCompile Include="HorasExtraNocturna.cpp" />
+    <ClCompile Include="HorasOrdinarias.cpp" />
+    <ClCompile Include="HorasOrdinariasMixta.cpp" />
+    <ClCompile Include="HorasOrdinariasNocturnas.cpp" />
+    <ClCompile Include="Ingreso.cpp" />
+    <ClCompile Include="IngresoBuilder.cpp" />
+    <ClCompile Include="IteradorLista.cpp" />
+    <ClCompile Include="Lista.cpp" />
+    <ClCompile Include="Maternidad.cpp" />
+    <ClCompile Include="Menu.cpp" />
+    <ClCompile Include="Controladora.cpp" />
+    <ClCompile Include="Nodo.cpp" />
+    <ClCompile Include="Nomina.cpp" />
+    <ClCompile Include="ObjectAdaptador.cpp" />
+    <ClCompile Include="Planilla.cpp" />
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="Renta.cpp" />
+    <ClCompile Include="ReporteTXT.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="BonificacionMontoFijo.h" />
+    <ClInclude Include="BonificacionPorcentaje.h" />
+    <ClInclude Include="CCSS.h" />
+    <ClInclude Include="ColillaPago.h" />
+    <ClInclude Include="ComponenteSalario.h" />
+    <ClInclude Include="ComponteFactory.h" />
+    <ClInclude Include="Consola.h" />
+    <ClInclude Include="DeduccionBuilder.h" />
+    <ClInclude Include="Deduccion.h" />
+    <ClInclude Include="DeduccionCompuesta.h" />
+    <ClInclude Include="DeduccionFactory.h" />
+    <ClInclude Include="DeduccionFija.h" />
+    <ClInclude Include="DeduccionPorcentual.h" />
+    <ClInclude Include="Embargos.h" />
+    <ClInclude Include="Empleado.h" />
+    <ClInclude Include="HorasDoblesDiurnas.h" />
+    <ClInclude Include="HorasDoblesMixta.h" />
+    <ClInclude Include="HorasDoblesNocturno.h" />
+    <ClInclude Include="HorasExtraDiurnas.h" />
+    <ClInclude Include="HorasExtraFeriadoLaborado.h" />
+    <ClInclude Include="HorasExtraMixta.h" />
+    <ClInclude Include="HorasExtraNocturna.h" />
+    <ClInclude Include="HorasOrdinarias.h" />
+    <ClInclude Include="HorasOrdinariasMixta.h" />
+    <ClInclude Include="HorasOrdinariasNocturnas.h" />
+    <ClInclude Include="IColeccion.h" />
+    <ClInclude Include="IEnumerable.h" />
+    <ClInclude Include="IIterador.h" />
+    <ClInclude Include="Ingreso.h" />
+    <ClInclude Include="IngresoBuilder.h" />
+    <ClInclude Include="IObjeto.h" />
+    <ClInclude Include="IteradorLista.h" />
+    <ClInclude Include="Lista.h" />
+    <ClInclude Include="Maternidad.h" />
+    <ClInclude Include="Menu.h" />
+    <ClInclude Include="Controladora.h" />
+    <ClInclude Include="Nodo.h" />
+    <ClInclude Include="Nomina.h" />
+    <ClInclude Include="ObjectAdaptador.h" />
+    <ClInclude Include="Planilla.h" />
+    <ClInclude Include="Renta.h" />
+    <ClInclude Include="ReporteTXT.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="Proyecto_#1_PrograII.rc" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
